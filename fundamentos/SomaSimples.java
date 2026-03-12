@@ -1,5 +1,5 @@
 // Aprendendo a soma no java
-package JavaBasico;
+package fundamentos;
 public class SomaSimples 
 { 
     public static void main (String []args)

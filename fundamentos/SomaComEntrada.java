@@ -1,5 +1,5 @@
 // Soma a partir do que o usuário digitar
-package JavaBasico;
+package fundamentos;
 import java.util.Scanner;
 
 public class SomaComEntrada {

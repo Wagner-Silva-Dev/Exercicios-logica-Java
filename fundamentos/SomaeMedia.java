@@ -1,5 +1,5 @@
 // Aprendendo a fazer a média de uma soma que o usuário digitar
-package JavaBasico;
+package fundamentos;
 import java.util.Scanner;
 
 public class SomaeMedia 

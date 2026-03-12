@@ -1,4 +1,3 @@
-package JavaBasico;
 // Enunciado 
 // Implementando uma regra simples de desconto de uma loja.
 // A regra é:
@@ -6,6 +5,7 @@ package JavaBasico;
 // Se o cliente for “premium” e o valor da compra for maior ou igual a 200, aplicar 15% de desconto.
 // Se o cliente não for premium e o valor da compra for maior ou igual a 200, aplicar 5% de desconto.
 // Se o valor da compra for menor que 200, não aplicar desconto.
+package fundamentos;
 import java.util.Scanner;
 
 public class Premiumounao 
