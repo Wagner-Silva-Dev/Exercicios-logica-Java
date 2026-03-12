@@ -8,7 +8,7 @@
 package fundamentos;
 import java.util.Scanner;
 
-public class Premiumounao 
+public class CalculadoraDeDesconto
 {
     public static String lerSN(Scanner entrada) 
     {
@@ -30,7 +30,7 @@ public class Premiumounao
 
     while(Continuar.equalsIgnoreCase("S"))
     {   
-        double ValorCompra, ValorFinal;
+        double ValorCompra, ValorFinal, ValorDesconto = 0, PorcentagemDesconto = 0;
         String Premium;
 
         System.out.println("Qual o valor da compra?");
@@ -44,16 +44,21 @@ public class Premiumounao
             
             if (Premium.equalsIgnoreCase("S"))
             {
-                ValorFinal = ValorCompra * 0.85;
+                ValorDesconto = ValorCompra * 0.15;
+                PorcentagemDesconto = (ValorDesconto / ValorCompra) * 100;
+                ValorFinal = ValorCompra - ValorDesconto;                
             }   
             else
             {
-                ValorFinal = ValorCompra * 0.95;
+                ValorDesconto = ValorCompra * 0.05;
+                PorcentagemDesconto = (ValorDesconto / ValorCompra) * 100;
+                ValorFinal = ValorCompra - ValorDesconto;
             }
         }
     
         System.out.println("----------------------------------------");
-        System.out.println("O valor final da compra foi de " + ValorFinal);
+        System.out.printf("O valor final da compra foi de R$ %.2f%n", ValorFinal);
+        System.out.printf("O valor do desconto foi de R$ %.2f dando %.0f%% de desconto%n", ValorDesconto, PorcentagemDesconto);
         System.out.println("----------------------------------------");
 
         System.out.println("Deseja continuar? S/N");
