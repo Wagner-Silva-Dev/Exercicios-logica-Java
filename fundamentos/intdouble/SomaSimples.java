@@ -1,5 +1,5 @@
 // Aprendendo a soma no java
-package fundamentos;
+package fundamentos.intdouble;
 public class SomaSimples 
 { 
     public static void main (String []args)

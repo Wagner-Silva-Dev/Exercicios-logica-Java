@@ -1,5 +1,5 @@
 // Aprendendo a fazer a média de uma soma que o usuário digitar
-package fundamentos;
+package fundamentos.intdouble;
 import java.util.Scanner;
 
 public class SomaeMedia 
