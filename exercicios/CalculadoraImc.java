@@ -1,4 +1,4 @@
-package fundamentos.intdouble;
+package exercicios;
 import java.util.Scanner;
 
 public class CalculadoraImc 

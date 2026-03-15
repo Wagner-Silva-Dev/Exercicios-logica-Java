@@ -5,7 +5,7 @@
 // Se o cliente for “premium” e o valor da compra for maior ou igual a 200, aplicar 15% de desconto.
 // Se o cliente não for premium e o valor da compra for maior ou igual a 200, aplicar 5% de desconto.
 // Se o valor da compra for menor que 200, não aplicar desconto.
-package fundamentos.intdouble;
+package exercicios;
 import java.util.Scanner;
 
 public class CalculadoraDeDesconto
