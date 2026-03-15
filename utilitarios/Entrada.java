@@ -6,7 +6,10 @@ public class Entrada
 {
         public static String lerSN(Scanner entrada)
     {
-        String Continuar = entrada.next();
+        
+        entrada.nextLine();
+        System.out.println("Deseja continuar? S/N");
+        String Continuar = entrada.nextLine();
 
         while (!Continuar.equalsIgnoreCase("S") && !Continuar.equalsIgnoreCase("N"))
         {
