@@ -26,6 +26,8 @@ public class RelatorioLaboratorio
         int amostrasDia, tempo, amostrasValidas, amostrasInvalidas;
         double tempoMedio, percentualResultadosValidos;
 
+        System.out.println("\nRelatorio Diario Do Laboratorio");
+
         System.out.println("Quantas amostras foram processadas no dia?");
         amostrasDia = leia.nextInt();
 
@@ -35,13 +37,13 @@ public class RelatorioLaboratorio
         System.out.println("E quantas amostras estão válidas?");
         amostrasValidas = leia.nextInt();
         
-
         tempoMedio = (double)tempo / amostrasDia;
 
         amostrasInvalidas = amostrasDia - amostrasValidas;
 
         percentualResultadosValidos = ((double)amostrasValidas / amostrasDia) * 100;
 
+        System.out.println("\nRelatorio Diario Do Laboratorio");
         System.out.println("------------------------------------------------------------------------");
         System.out.println("Amostras processadas: " + amostrasDia);
         System.out.printf("Tempo médio gasto no processamento de amostras: %.2f minutos por amostra %n", tempoMedio);
