@@ -11,7 +11,7 @@ public class RegistroTempoAtendimento {
         Locale.setDefault(Locale.US);
         Scanner leia = new Scanner(System.in);
         int atendimentos;
-        double somaTempo = 0.0, maior = Double.NEGATIVE_INFINITY, menor = Double.POSITIVE_INFINITY;
+        double somaTempo = 0.0, maiorTempo = Double.NEGATIVE_INFINITY, menorTempo = Double.POSITIVE_INFINITY;
 
         System.out.println("Quantos atendimentos teve no dia?");
         atendimentos = leia.nextInt();
@@ -26,15 +26,15 @@ public class RegistroTempoAtendimento {
             double tempo = leia.nextDouble();
 
             while (tempo <0){
-                System.out.print("Tempo Invalido. Digite Novamente: ");
+                System.out.print("Valor inválido, digite um número maior que zero: ");
                 tempo = leia.nextDouble();
             }
-            if (tempo > maior){
-                maior = tempo;
+            if (tempo > maiorTempo){
+                maiorTempo = tempo;
             }
 
-            if (tempo < menor){
-                menor = tempo;
+            if (tempo < menorTempo){
+                menorTempo = tempo;
             }
             somaTempo += tempo;
         }
@@ -42,10 +42,10 @@ public class RegistroTempoAtendimento {
         double media = somaTempo / atendimentos;
 
         System.out.println("Total de Atendimentos: " + atendimentos);
-        System.err.println("Tempo Total de Atendimentos: " + somaTempo);
+        System.out.println("Tempo Total de Atendimentos: " + somaTempo);
         System.out.printf("Tempo Médio dos Atendimentos: %.2f %n", media);
-        System.out.println("O Atendimento com maior tempo foi de: " + maior + " Minutos");
-        System.out.println("O atendimento com menor tempo foi de: " + menor + " Minutos");
+        System.out.println("O Atendimento com maior tempo foi de: " + maiorTempo + " Minutos");
+        System.out.println("O atendimento com menor tempo foi de: " + menorTempo + " Minutos");
 
         leia.close();
     }
