@@ -15,10 +15,20 @@ public class TurnoseAmostras {
             if (amostras == -1){
                 break;
             }
+            
+            while (amostras < 0){
+                System.out.println("Valor Negativo não são válidos, Digite um Valor válido");
+                amostras = scanner.nextInt();
+            }
 
             for (int turno = 1; turno <= amostras; turno++){
                 System.out.println("Digite o tempo para fazer essa amostra(ou -1 para encerrar)");
                 double tempoAmostra = scanner.nextDouble();
+
+                while (tempoAmostra < 0){
+                    System.out.println("Valor Negativo não são válidos, Digite um Valor válido");
+                    tempoAmostra = scanner.nextInt();
+                }
 
                 if (tempoAmostra == -1){
                     break;
