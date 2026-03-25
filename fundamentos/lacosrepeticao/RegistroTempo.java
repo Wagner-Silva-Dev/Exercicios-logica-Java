@@ -24,12 +24,12 @@ public class RegistroTempo {
             if ((tempo == -1 && cont > 0) || (tempo == -1 && cont == 0)){
                 break;
             }
-            else if (tempo < 0){
+            else if (tempo <= 0){
                 System.out.println("Valores negativos não são aceitos");
             }
             else{
                 cont++;
-                System.out.println("Tempo de " + tempo + " registrado com sucesso");
+                System.out.println("Tempo de " + tempo + " minutos registrado com sucesso");
                 soma += tempo;
             }
         }while (tempo != -1);
