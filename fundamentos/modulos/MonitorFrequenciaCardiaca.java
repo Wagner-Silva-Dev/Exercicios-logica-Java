@@ -13,26 +13,25 @@ public class MonitorFrequenciaCardiaca {
 
     public static void main(String []args){
         
-        Scanner leia = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Qual a frequência cardíaca do paciente?");
-        int frequencia = leia.nextInt();
+        int frequencia = scanner.nextInt();
 
-        verificaFrequenciaCardiaca(frequencia);
-        System.out.println("Frequência de " + frequencia);
-        leia.close();
+        boolean emergencia = verificaFrequenciaCardiaca(frequencia);
+        
+        if (emergencia){
+            System.out.println("EMERGÊNCIA ATIVADA");
+        } else {
+            System.out.println("Frequência de " + frequencia+ " bpm paciente estável");
+        }
+
+        scanner.close();
     }   
 
     public static boolean verificaFrequenciaCardiaca(int frequencia){
 
-        if (frequencia < 40 || frequencia > 120){
-            System.out.println("EMERGÊNCIA ATIVADA");
-            return true;
-        } else {
-            System.out.println("Paciente estável");
-            return false;
-        }
-
+        return (frequencia < 40 || frequencia > 120);
     }
 
 }
