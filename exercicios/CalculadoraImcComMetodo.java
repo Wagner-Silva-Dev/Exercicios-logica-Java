@@ -23,9 +23,24 @@ public class CalculadoraImcComMetodo {
 
         int alaEscolha = scanner.nextInt();
 
+        while (alaEscolha < 1 || alaEscolha > 3) {
+            System.out.print("Opção inválida, digite 1, 2 ou 3: ");
+            alaEscolha = scanner.nextInt();
+        }
+        
         alaEscolhida(alaEscolha);
+        
+        System.out.println("Digite qual o seu peso");
+        double peso = scanner.nextDouble();
 
-        calculoIMC(scanner);
+        System.out.println("Digite a sua altura(m)");
+        double altura = scanner.nextDouble();
+
+        double imc = calcularIMC(peso, altura);
+
+        String classificacao = classificarIMC(imc);
+
+        System.out.printf("%nVocê tem %.2fKg e %.2fm sendo assim você tem um IMC de %.2f - %s", peso, altura, imc, classificacao);
 
         scanner.close();
     }
@@ -50,33 +65,30 @@ public class CalculadoraImcComMetodo {
         return escolha;
     }
 
-    public static double calculoIMC(Scanner scanner) {
-        System.out.println("Digite qual o seu peso");
-        double peso = scanner.nextDouble();
-
-        System.out.println("Digite a sua altura(m)");
-        double altura = scanner.nextDouble();
+    public static double calcularIMC(double peso, double altura) {
 
         double imc = peso / (altura * altura);
-
-        String classificacao;
-        if (imc < 18.5) {
-            classificacao = "Abaixo do peso";
-        } else if (imc < 25){
-            classificacao = "Peso normal";
-        } else if (imc < 30){
-            classificacao = "Sobrepeso";
-        } else if (imc < 35){
-            classificacao = "Obesidade Grau I";
-        } else if (imc < 40){
-            classificacao = "Obesidade Grau II";
-        } else {
-            classificacao = "Obesidade Grau III (Mórbida)";
-        }
-
-        System.out.printf("%n Você tem %.2fKg e %.2fm sendo assim você tem um IMC de %.2f - %s", peso, altura, imc, classificacao);
 
         return imc;
     }
 
+    public static String classificarIMC(double imc) {
+        if (imc < 18.5)
+            return "Abaixo do peso";
+
+        else if (imc < 25)
+            return "Peso normal";
+
+        else if (imc < 30)
+            return "Sobrepeso";
+
+        else if (imc < 35)
+            return "Obesidade Grau I";
+
+        else if (imc < 40)
+            return "Obesidade Grau II";
+
+        else
+            return "Obesidade Grau III (Mórbida)";
+    }
 }
