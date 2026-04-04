@@ -27,5 +27,7 @@ public class TaxaSalarioAnualHolanda {
         double salarioComDesconto = salario - valorImposto;
 
         System.out.printf("Seu salario bruto é de €%.2f, com a taxa de imposto de €%.2f sobra €%.2f", salario , valorImposto, salarioComDesconto);
+
+        input.close();
     }
 }
