@@ -45,9 +45,7 @@ public class CalculadoraDeDesconto
             if (Premium.equalsIgnoreCase("S"))
             {
                 ValorDesconto = ValorCompra * 0.15;
-                PorcentagemDesconto = (ValorDesconto / ValorCompra) * 100;
-                ValorFinal = ValorCompra - ValorDesconto;                
-            }   
+            }
             else
             {
                 ValorDesconto = ValorCompra * 0.05;
