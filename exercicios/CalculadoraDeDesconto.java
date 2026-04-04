@@ -41,19 +41,17 @@ public class CalculadoraDeDesconto
         {
             System.out.println("é um cliente premium? S/N");
             Premium = lerSN(entrada);
-            
+
             if (Premium.equalsIgnoreCase("S"))
             {
                 ValorDesconto = ValorCompra * 0.15;
-                PorcentagemDesconto = (ValorDesconto / ValorCompra) * 100;
-                ValorFinal = ValorCompra - ValorDesconto;                
-            }   
+            }
             else
             {
                 ValorDesconto = ValorCompra * 0.05;
-                PorcentagemDesconto = (ValorDesconto / ValorCompra) * 100;
-                ValorFinal = ValorCompra - ValorDesconto;
             }
+            PorcentagemDesconto = (ValorDesconto / ValorCompra) * 100;
+            ValorFinal = ValorCompra - ValorDesconto;
         }
     
         System.out.println("----------------------------------------");
