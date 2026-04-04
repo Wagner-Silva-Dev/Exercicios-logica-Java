@@ -56,7 +56,9 @@ public class CalculadoraDeDesconto
     
         System.out.println("----------------------------------------");
         System.out.printf("O valor final da compra foi de R$ %.2f%n", ValorFinal);
-        System.out.printf("O valor do desconto foi de R$ %.2f dando %.0f%% de desconto%n", ValorDesconto, PorcentagemDesconto);
+        if (ValorCompra >= 200) {
+            System.out.printf("O valor do desconto foi de R$ %.2f dando %.0f%% de desconto%n", ValorDesconto, PorcentagemDesconto);
+        }
         System.out.println("----------------------------------------");
 
         System.out.println("Deseja continuar? S/N");
