@@ -45,7 +45,7 @@ public class CalculadoraImcComMetodo {
         scanner.close();
     }
 
-    public static int alaEscolhida(int escolha) {
+    public static void alaEscolhida(int escolha) {
         switch (escolha) {
             case 1:
                 System.out.println("Bem vindo a área de Pediatria\n");
@@ -62,14 +62,11 @@ public class CalculadoraImcComMetodo {
 
         System.out.println("Vamos calcular seu IMC");
 
-        return escolha;
     }
 
     public static double calcularIMC(double peso, double altura) {
 
-        double imc = peso / (altura * altura);
-
-        return imc;
+        return peso / (altura * altura);
     }
 
     public static String classificarIMC(double imc) {
