@@ -1,5 +1,5 @@
 // Soma a partir do que o usuário digitar
-package fundamentos.intdouble;
+package fundamentos.operadores;
 import java.util.Scanner;
 
 public class SomaComEntrada {
