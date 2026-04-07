@@ -19,8 +19,13 @@ public class AprendendoArrays {
         idades[1] = 40;
         idades[2] = 55;
 
-        for (int i = 0; i < idades.length; i++) {
+        /*for (int i = 0; i < idades.length; i++) {
             System.out.println( idades[i] );
-        }
+        }*/
+
+        /* jeito simplificado com foreach*/
+          for(int idade: idades){
+              System.out.println(idade);
+          }
     }
 }
