@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class ParOuImpar {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Deseja ver os númeoros pares e ímpares até que número? ");
-        int limite = input.nextInt();
+        int limite = scanner.nextInt();
 
         for (int i = 0; i <= limite; i++) {
             if (i % 2 == 0) {
@@ -17,6 +17,6 @@ public class ParOuImpar {
                 System.out.print(i + " Impar, ");
             }
         }
-
+        scanner.close();
     }
 }
