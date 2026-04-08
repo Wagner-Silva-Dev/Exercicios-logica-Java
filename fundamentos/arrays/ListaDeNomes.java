@@ -1,17 +1,24 @@
 package fundamentos.arrays;
 
 public class ListaDeNomes {
-    public void main(String[] args) {
-        String[] Nomes = new String[5];
+    public static void main(String[] args) {
+        String[] nomes = new String[5];
 
-        Nomes[0] = "Ana";
-        Nomes[1] = "Bruno";
-        Nomes[2] = "Carlos";
-        Nomes[3] = "Daniela";
-        Nomes[4] = "Eduardo";
+        nomes[0] = "Ana";
+        nomes[1] = "Bruno";
+        nomes[2] = "Carlos";
+        nomes[3] = "Daniela";
+        nomes[4] = "Eduardo";
 
-        for (String MostrarNomes : Nomes){
-            System.out.println(MostrarNomes);
+        double[] notas = new double[5];
+        notas[0] = 8.5;
+        notas[1] = 6.0;
+        notas[2] = 9.5;
+        notas[3] = 4.0;
+        notas[4] = 7.5;
+
+        for (int contador = 0; contador < nomes.length; contador++) {
+            System.out.println(nomes[contador] + " - "  + notas[contador]);
         }
     }
 }
