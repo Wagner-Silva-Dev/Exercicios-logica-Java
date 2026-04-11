@@ -1,5 +1,7 @@
 # Exercícios de Lógica em Java
 
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+
 Repositório com exercícios de lógica de programação desenvolvidos durante meus estudos de Java no curso de ADS.
 
 ## 📚 Conteúdo
@@ -22,11 +24,12 @@ Repositório com exercícios de lógica de programação desenvolvidos durante m
 | `RelatorioLaboratorio.java` | Gera relatório diário de amostras de laboratório |
 | `TurnoseAmostras.java` | Controla turnos e amostras com interrupção por valor especial |
 | `PriorizaAtendimento.java` | Sistema de pontuação para priorização de atendimento social |
+| `CadastroColaborador.java` | Cadastro de colaborador com validações — feito em dupla |
 
 ## 🎯 Objetivo
 
 Praticar lógica de programação e construir uma base sólida em Java, um exercício de cada vez.
 
-## 🤖 Uso de IA
+## 🤝 Colaboradores
 
-O exercício `PriorizaAtendimento.java` teve auxílio do Claude (Anthropic) para tirar dúvidas sobre escopo de variáveis, estrutura de métodos e formatação de saída. Os demais exercícios foram desenvolvidos de forma independente.
+- [`CadastroColaborador.java`](./exercicios/CadastroColaborador.java) — desenvolvido em dupla com [Kaio](https://github.com/kaio-vex) durante as aulas do curso de ADS
