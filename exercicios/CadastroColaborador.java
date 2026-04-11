@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class CadastroColaborador {
 
-    static final double SalarioBase = 2000.0;
+    static final double SALARIO_BASE = 2000.0;
 
     public static void main(String[] args) {
         try (Scanner entrada = new Scanner(System.in).useLocale(Locale.US)) {
@@ -25,21 +25,21 @@ public class CadastroColaborador {
 
                         do {
                             // O método faz o trabalho e nos diz se deve continuar
-                            continuar = executarCadastro(entrada, colaboradores, SalarioBase);
+                            continuar = executarCadastro(entrada, colaboradores, SALARIO_BASE);
                         } while (continuar);
                         break;
 
                     case 2:
 
                         do {
-                            continuar = executarCadastroComissionado(entrada, colaboradores, SalarioBase);
+                            continuar = executarCadastroComissionado(entrada, colaboradores, SALARIO_BASE);
                         } while (continuar);
                         break;
 
                     case 3:
 
                         do {
-                            continuar = executarCadastroProducao(entrada, colaboradores, SalarioBase);
+                            continuar = executarCadastroProducao(entrada, colaboradores, SALARIO_BASE);
                         } while (continuar);
                         break;
 
