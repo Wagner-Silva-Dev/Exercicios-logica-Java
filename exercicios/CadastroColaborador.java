@@ -47,7 +47,7 @@ public class CadastroColaborador {
                         exibirFolhaPagamento (colaboradores);
                         break;
 
-                    case 5:
+                    case 0:
                         rodando = false;
                         System.out.println("Encerrando sistema.");
                         break;
@@ -66,7 +66,7 @@ public class CadastroColaborador {
         System.out.println("Opção 2: Cadastro de Colaborador Comissionado.");
         System.out.println("Opção 3: Cadastro de Colaborador de Produção.");
         System.out.println("Opção 4: Gerar Folha de Pagamento.");
-        System.out.println("Opção 5: Fechar sistema.");
+        System.out.println("Opção 0: Fechar sistema.");
     }
 
     public static boolean executarCadastro(Scanner entrada, ArrayList<String> lista, double valorBase) {
@@ -85,7 +85,7 @@ public class CadastroColaborador {
         entrada.nextLine(); // Limpa o buffer do Enter
 
         // Guarda tudo formatado na lista
-        String dadosParaSalvar = "Nome: " + nome + " | Reg: " + registro + " | Salário: " +valorBase;
+        String dadosParaSalvar = formatarColaborador(nome, registro, valorBase);
         lista.add(dadosParaSalvar);
 
         System.out.println("Colaborador cadastrado com sucesso!");
@@ -115,7 +115,7 @@ public class CadastroColaborador {
 
         double salarioFinal = valorBase + (vendas * porcentagemComissao / 100);
 
-        String dadosParaSalvar = "Nome: " + nome + " | Reg: " + registro + " | Salário: " + salarioFinal;
+        String dadosParaSalvar = formatarColaborador(nome, registro, salarioFinal);
         lista.add(dadosParaSalvar);
 
         System.out.println("Colaborador cadastrado com sucesso!");
@@ -146,7 +146,7 @@ public class CadastroColaborador {
 
         double salarioFinal = valorBase + (pecasProduzidas * valorPecas);
 
-        String dadosParaSalvar = "Nome: " + nome + " | Reg: " + registro + " | Salário: " + salarioFinal;
+        String dadosParaSalvar = formatarColaborador(nome, registro, salarioFinal);
         lista.add(dadosParaSalvar);
 
         System.out.println("Colaborador cadastrado com sucesso!");
@@ -167,5 +167,9 @@ public class CadastroColaborador {
         }
 
         System.out.println("========================================\n");
+    }
+
+    public static String formatarColaborador(String nome, int registro, double salarioFinal) {
+        return String.format("Nome: %s | Reg: %d | Salário: R$ %.2f", nome, registro, salarioFinal);
     }
 }
