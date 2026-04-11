@@ -34,14 +34,14 @@ public class CadastroColaborador {
                     case 2:
 
                         do {
-                            continuar = executarCadastroComissionado(entrada, colaboradores, 2000, 5);
+                            continuar = executarCadastroComissionado(entrada, colaboradores, 2000);
                         } while (continuar);
                         break;
 
                     case 3:
 
                         do {
-                            continuar = executarCadastroProducao(entrada, colaboradores, 2000, 0.20);
+                            continuar = executarCadastroProducao(entrada, colaboradores, 2000);
                         } while (continuar);
                         break;
 
@@ -51,6 +51,7 @@ public class CadastroColaborador {
 
                     case 5:
                         rodando = false;
+                        System.out.println("Encerrando sistema.");
                         break;
 
                     default:
@@ -83,7 +84,8 @@ public class CadastroColaborador {
         System.out.println("Colaborador cadastrado com sucesso!");
         return true; // Retorna 'true' para indicar que o cadastro aconteceu e pode continuar
     }
-    public static boolean executarCadastroComissionado(Scanner entrada, ArrayList<String> lista, int valorBase, double porcentagemComissao) {
+
+    public static boolean executarCadastroComissionado(Scanner entrada, ArrayList<String> lista, int valorBase) {
         System.out.println("\n --- CADASTRANDO COLABORADOR COMISSIONADO ---");
         System.out.println("Insira o nome (ou 'parar'): ");
         String nome = entrada.nextLine();
@@ -96,11 +98,15 @@ public class CadastroColaborador {
         int registro = entrada.nextInt();
         entrada.nextLine();
 
-        System.out.println("Insira o número de vendas: ");
+        System.out.println("Insira o valor total das vendas realizadas: ");
         double vendas = entrada.nextDouble();
         entrada.nextLine();
 
-        double salarioFinal = valorBase + (vendas * porcentagemComissao / 100);
+        System.out.println("Informe comissão percentual: ");
+        double comissao = entrada.nextDouble();
+        entrada.nextLine();
+
+        double salarioFinal = valorBase + (vendas * comissao / 100);
 
         String dadosParaSalvar = "Nome: " + nome + " | Reg: " + registro + " | Salário: " +salarioFinal;
         lista.add(dadosParaSalvar);
@@ -109,7 +115,8 @@ public class CadastroColaborador {
         return true;
 
     }
-    public static boolean executarCadastroProducao(Scanner entrada, ArrayList<String> lista, int valorBase, double valorPeca) {
+
+    public static boolean executarCadastroProducao(Scanner entrada, ArrayList<String> lista, int valorBase) {
         System.out.println("\n --- CADASTRANDO COLABORADOR DE PRODUÇÃO ---");
         System.out.println("Insira o nome (ou 'parar'): ");
         String nome = entrada.nextLine();
@@ -126,7 +133,11 @@ public class CadastroColaborador {
         double pecasProduzidas = entrada.nextDouble();
         entrada.nextLine();
 
-        double salarioFinal = valorBase + (pecasProduzidas * valorPeca);
+        System.out.println("Informe o valor das peças produzidas: ");
+        double valorPecas = entrada.nextDouble();
+        entrada.nextLine();
+
+        double salarioFinal = valorBase + (pecasProduzidas * valorPecas);
 
         String dadosParaSalvar = "Nome: " + nome + " | Reg: " + registro + " | Salário: " +salarioFinal;
         lista.add(dadosParaSalvar);
@@ -134,6 +145,7 @@ public class CadastroColaborador {
         System.out.println("Colaborador cadastrado com sucesso!");
         return true;
     }
+
     public static void exibirFolhaPagamento(ArrayList<String> lista) {
         System.out.println("\n========== FOLHA DE PAGAMENTO ==========");
 
@@ -147,6 +159,6 @@ public class CadastroColaborador {
             }
         }
 
-        System.out.println("========================================");
+        System.out.println("========================================\n");
     }
 }
