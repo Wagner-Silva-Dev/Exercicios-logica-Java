@@ -12,12 +12,7 @@ public class CadastroColaborador {
             boolean rodando = true;
 
             do {
-                System.out.println("Informe que tipo de cadastro você quer fazer: ");
-                System.out.println("Opção 1: Cadastro de Colaborador Padrão");
-                System.out.println("Opção 2: Cadastro de Colaborador Comissionado.");
-                System.out.println("Opção 3: Cadastro de Colaborador de Produção.");
-                System.out.println("Opção 4: Gerar Folha de Pagamento.");
-                System.out.println("Opção 5: Fechar sistema.");
+                exibirmenu();
                 int opcao = entrada.nextInt();
                 entrada.nextLine();
 
@@ -60,6 +55,15 @@ public class CadastroColaborador {
                 }
             } while (rodando);
         }
+    }
+
+    public static void exibirmenu() {
+        System.out.println("Informe que tipo de cadastro você quer fazer: ");
+        System.out.println("Opção 1: Cadastro de Colaborador Padrão");
+        System.out.println("Opção 2: Cadastro de Colaborador Comissionado.");
+        System.out.println("Opção 3: Cadastro de Colaborador de Produção.");
+        System.out.println("Opção 4: Gerar Folha de Pagamento.");
+        System.out.println("Opção 5: Fechar sistema.");
     }
 
     public static boolean executarCadastro(Scanner entrada, ArrayList<String> lista, int valorBase) {
