@@ -5,6 +5,9 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class CadastroColaborador {
+
+    static final double SalarioBase = 2000.0;
+
     public static void main(String[] args) {
         try (Scanner entrada = new Scanner(System.in).useLocale(Locale.US)) {
             ArrayList<String> colaboradores = new ArrayList<>();
@@ -22,21 +25,21 @@ public class CadastroColaborador {
 
                         do {
                             // O método faz o trabalho e nos diz se deve continuar
-                            continuar = executarCadastro(entrada, colaboradores, 2000);
+                            continuar = executarCadastro(entrada, colaboradores, SalarioBase);
                         } while (continuar);
                         break;
 
                     case 2:
 
                         do {
-                            continuar = executarCadastroComissionado(entrada, colaboradores, 2000);
+                            continuar = executarCadastroComissionado(entrada, colaboradores, SalarioBase);
                         } while (continuar);
                         break;
 
                     case 3:
 
                         do {
-                            continuar = executarCadastroProducao(entrada, colaboradores, 2000);
+                            continuar = executarCadastroProducao(entrada, colaboradores, SalarioBase);
                         } while (continuar);
                         break;
 
@@ -66,7 +69,7 @@ public class CadastroColaborador {
         System.out.println("Opção 5: Fechar sistema.");
     }
 
-    public static boolean executarCadastro(Scanner entrada, ArrayList<String> lista, int valorBase) {
+    public static boolean executarCadastro(Scanner entrada, ArrayList<String> lista, double valorBase) {
         System.out.println("\n--- CADASTRANDO COLABORADOR COMUM ---");
         System.out.println("Insira o nome (ou 'parar'): ");
         String nome = entrada.nextLine();
@@ -89,7 +92,7 @@ public class CadastroColaborador {
         return true; // Retorna 'true' para indicar que o cadastro aconteceu e pode continuar
     }
 
-    public static boolean executarCadastroComissionado(Scanner entrada, ArrayList<String> lista, int valorBase) {
+    public static boolean executarCadastroComissionado(Scanner entrada, ArrayList<String> lista, double valorBase) {
         System.out.println("\n --- CADASTRANDO COLABORADOR COMISSIONADO ---");
         System.out.println("Insira o nome (ou 'parar'): ");
         String nome = entrada.nextLine();
@@ -107,12 +110,12 @@ public class CadastroColaborador {
         entrada.nextLine();
 
         System.out.println("Informe comissão percentual: ");
-        double comissao = entrada.nextDouble();
+        double porcentagemComissao = entrada.nextDouble();
         entrada.nextLine();
 
-        double salarioFinal = valorBase + (vendas * comissao / 100);
+        double salarioFinal = valorBase + (vendas * porcentagemComissao / 100);
 
-        String dadosParaSalvar = "Nome: " + nome + " | Reg: " + registro + " | Salário: " +salarioFinal;
+        String dadosParaSalvar = "Nome: " + nome + " | Reg: " + registro + " | Salário: " + salarioFinal;
         lista.add(dadosParaSalvar);
 
         System.out.println("Colaborador cadastrado com sucesso!");
@@ -120,7 +123,7 @@ public class CadastroColaborador {
 
     }
 
-    public static boolean executarCadastroProducao(Scanner entrada, ArrayList<String> lista, int valorBase) {
+    public static boolean executarCadastroProducao(Scanner entrada, ArrayList<String> lista, double valorBase) {
         System.out.println("\n --- CADASTRANDO COLABORADOR DE PRODUÇÃO ---");
         System.out.println("Insira o nome (ou 'parar'): ");
         String nome = entrada.nextLine();
@@ -143,7 +146,7 @@ public class CadastroColaborador {
 
         double salarioFinal = valorBase + (pecasProduzidas * valorPecas);
 
-        String dadosParaSalvar = "Nome: " + nome + " | Reg: " + registro + " | Salário: " +salarioFinal;
+        String dadosParaSalvar = "Nome: " + nome + " | Reg: " + registro + " | Salário: " + salarioFinal;
         lista.add(dadosParaSalvar);
 
         System.out.println("Colaborador cadastrado com sucesso!");
