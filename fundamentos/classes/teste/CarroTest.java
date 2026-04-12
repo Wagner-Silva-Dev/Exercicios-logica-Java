@@ -1,12 +1,14 @@
 package fundamentos.classes.teste;
 
+import fundamentos.classes.concessionaria.Carro;
 import java.util.Scanner;
 
-public class Carro {
+public class CarroTest {
+
     static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        fundamentos.classes.concessionaria.Carro carro = new fundamentos.classes.concessionaria.Carro();
+        Carro carro = new Carro();
 
         System.out.println("Digite quantos deseja digitar");
         int contador = sc.nextInt();
@@ -23,7 +25,7 @@ public class Carro {
             System.out.println("Digite o ano do carro");
             carro.ano = sc.nextInt();
 
-            while(carro.ano < 1884){
+            while(carro.ano < 1884 || carro.ano > 2026){
                 System.out.println("Esse ano não é valido, por favor digite novamente");
                 carro.ano = sc.nextInt();
             }
