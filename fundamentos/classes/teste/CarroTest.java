@@ -5,17 +5,12 @@ import java.util.Scanner;
 
 public class CarroTest {
 
-    static void main(String[] args){
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
         Carro carro = new Carro();
 
-        System.out.println("Digite quantos deseja digitar");
-        int contador = sc.nextInt();
-
-        for (int i = 0; i < contador; i++) {
-
-            sc.nextLine();
+        do{
             System.out.println("Digite o nome do carro");
             carro.nome = sc.nextLine();
 
@@ -30,14 +25,19 @@ public class CarroTest {
                 carro.ano = sc.nextInt();
             }
 
-            System.out.println("Especificações do carro");
-            System.out.println("Nome: " + carro.nome);
-            System.out.println("Modelo: " + carro.modelo);
-            System.out.println("Ano: " + carro.ano);
-        }
+            carro.imprimirEspecificacoesCarro();
+
+            sc.nextLine();
+            System.out.println("Deseja finalizar o sistema? S/N");
+            String continuar = sc.nextLine();
+            if (continuar.equalsIgnoreCase("S")) {
+                break;
+            }
+        }while(true);
+
         System.out.println("----------------------");
         System.out.println("Digitação Encerrada");
-        System.out.println("Finalizando programa");
+        System.out.println("Finalizando sistema");
         System.out.println("----------------------");
     }
 }
