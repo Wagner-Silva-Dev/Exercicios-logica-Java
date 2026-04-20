@@ -1,4 +1,4 @@
-package src.fundamentos.classes.funcionarios;
+package fundamentos.classes.funcionarios;
 
 public class ImprimirFuncionarios {
     public void imprimir(Funcionarios funcionarios) {

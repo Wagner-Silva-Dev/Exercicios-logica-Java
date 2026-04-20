@@ -1,4 +1,4 @@
-package src.fundamentos.arrays;
+package fundamentos.arrays;
 
 public class ListaDeNomes {
     public static void main(String[] args) {

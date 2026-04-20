@@ -1,4 +1,4 @@
-package src.fundamentos.classes.concessionaria;
+package fundamentos.classes.concessionaria;
 
 public class Carro {
     public String nome;

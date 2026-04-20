@@ -4,7 +4,7 @@ Você vai usar estruturas repetitivas para processar várias famílias e estrutu
 Você vai organizar o código de forma legível, preferencialmente com subrotinas para separar responsabilidades 
 (por exemplo: calcular pontuação, validar dados, imprimir explicação). Você vai gerar uma saída final com a pontuação e a ordem de prioridade, 
 e vai incluir pelo menos dois testes simples no console para provar que o cálculo está coerente.*/
-package src.exercicios;
+package exercicios;
 
 import java.util.Scanner;
 

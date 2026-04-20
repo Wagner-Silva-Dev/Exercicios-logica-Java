@@ -5,7 +5,7 @@ Método com retorno boolean
 Recebe um int como parâmetro
 Se frequência maior que 120 ou menor que 40 retorna true (emergência)
 No main leia a frequência do usuário, chame o método e exiba uma mensagem diferente dependendo do retorno*/
-package src.fundamentos.modulos;
+package fundamentos.modulos;
 
 import java.util.Scanner;
 

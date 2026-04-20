@@ -1,8 +1,8 @@
-package src.fundamentos.condicionais;
+package fundamentos.condicionais;
 
 import java.util.Scanner;
 
-import src.utilitarios.Entrada;
+import  utilitarios.Entrada;
 
 public class SwitchCase 
 {

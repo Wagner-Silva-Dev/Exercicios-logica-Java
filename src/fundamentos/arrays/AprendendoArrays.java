@@ -1,4 +1,4 @@
-package src.fundamentos.arrays;
+package fundamentos.arrays;
 
 public class AprendendoArrays {
 //    Antes dos arrays

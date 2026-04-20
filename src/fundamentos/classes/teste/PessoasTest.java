@@ -1,6 +1,6 @@
-package src.fundamentos.classes.teste;
+package fundamentos.classes.teste;
 
-import src.fundamentos.classes.pessoas.Pessoas;
+import  fundamentos.classes.pessoas.Pessoas;
 
 import java.util.Scanner;
 

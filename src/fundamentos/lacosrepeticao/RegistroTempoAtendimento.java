@@ -1,6 +1,6 @@
 // Você está implementando um sistema de registro de tempos de atendimento. Ao final do dia, o gestor quer saber: total de atendimentos, 
 // tempo total de atendimentos, tempo médio, maior tempo e menor tempo.
-package src.fundamentos.lacosrepeticao;
+package fundamentos.lacosrepeticao;
 
 import java.util.Scanner;
 import java.util.Locale;

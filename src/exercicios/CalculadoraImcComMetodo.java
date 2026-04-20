@@ -1,7 +1,7 @@
 /*Imagine que o sistema do hospital recebe o peso e a altura de pessoas em diferentes alas (PediatriaGeriatria e UTI). 
 Se escrevermos a fórmula do IMC em cada parte do programateremos um código repetitivo e perigoso: se a fórmula mudar ou precisar de um ajuste
 teríamos de alterar o código em dez lugares diferentes.*/
-package src.exercicios;
+package exercicios;
 
 import java.util.Scanner;
 

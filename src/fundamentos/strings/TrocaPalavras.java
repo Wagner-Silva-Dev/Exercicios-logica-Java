@@ -1,4 +1,4 @@
-package src.fundamentos.strings;
+package fundamentos.strings;
 import java.util.Scanner;
 
 public class TrocaPalavras {

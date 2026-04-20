@@ -1,5 +1,5 @@
 // Um laboratório recebe amostras e quer a média do tempo por amostra
-package src.fundamentos.lacosrepeticao;
+package fundamentos.lacosrepeticao;
 
 import java.util.Scanner;
 

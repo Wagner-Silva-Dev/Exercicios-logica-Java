@@ -1,5 +1,5 @@
 // Aprendendo o básico de métodos
-package src.fundamentos.modulos;
+package fundamentos.modulos;
 
 public class SistemaHospitalar {
      public static void main(String[] args) {

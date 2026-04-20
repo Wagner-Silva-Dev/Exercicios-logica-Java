@@ -1,4 +1,4 @@
-package src.fundamentos.condicionais;
+package fundamentos.condicionais;
 
 import java.util.Scanner;
 

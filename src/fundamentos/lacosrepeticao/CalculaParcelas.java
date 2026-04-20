@@ -1,4 +1,4 @@
-package src.fundamentos.lacosrepeticao;
+package fundamentos.lacosrepeticao;
 
 import java.util.Scanner;
 

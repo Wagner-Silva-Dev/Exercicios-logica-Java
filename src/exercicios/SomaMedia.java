@@ -1,10 +1,10 @@
 // Enunciado
 // Crie um programa Java que leia três notas (double) e calcule a média simples.
 // Depois imprima “media final” com duas casas decimais.
-package src.exercicios;
+package exercicios;
 
 import java.util.Scanner;
-import src.utilitarios.*;
+import  utilitarios.*;
 
 public class SomaMedia 
 {

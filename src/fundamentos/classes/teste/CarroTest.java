@@ -1,6 +1,6 @@
-package src.fundamentos.classes.teste;
+package fundamentos.classes.teste;
 
-import src.fundamentos.classes.concessionaria.Carro;
+import  fundamentos.classes.concessionaria.Carro;
 import java.util.Scanner;
 
 public class CarroTest {

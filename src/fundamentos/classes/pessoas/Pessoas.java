@@ -1,4 +1,4 @@
-package src.fundamentos.classes.pessoas;
+package fundamentos.classes.pessoas;
 
 public class Pessoas {
     private String nome;

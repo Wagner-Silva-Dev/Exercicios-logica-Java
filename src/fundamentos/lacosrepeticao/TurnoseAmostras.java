@@ -1,5 +1,5 @@
 // Crie um programa que repete turnos e amostras, e permite interromper quando um valor especial for digitado (-1 encerra o turno).
-package src.exercicios;
+package fundamentos.lacosrepeticao;
 
 import java.util.Scanner;
 

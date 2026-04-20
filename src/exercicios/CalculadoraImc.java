@@ -1,4 +1,4 @@
-package src.exercicios;
+package exercicios;
 import java.util.Scanner;
 
 public class CalculadoraImc 

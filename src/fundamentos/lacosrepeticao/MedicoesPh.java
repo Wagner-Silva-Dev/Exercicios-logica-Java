@@ -3,7 +3,7 @@
 // Um valor de pH deve estar entre 0 e 14.
 // O operador pode digitar errado e precisa tentar novamente.
 // Em algum momento, o operador deve conseguir encerrar a digitação quando terminar (sem o programa exigir um número fixo de entradas).
-package src.fundamentos.lacosrepeticao;
+package fundamentos.lacosrepeticao;
 
 import java.util.Scanner;
 

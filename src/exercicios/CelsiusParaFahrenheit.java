@@ -1,11 +1,11 @@
 // Enunciado
 // Crie um programa Java que leia uma temperatura em Celsius e mostre a temperatura em Fahrenheit.
 // Fórmula: F = C * 9/5 + 32.
-package src.exercicios;
+package exercicios;
 
 import java.util.Scanner;
 import java.util.Locale;
-import src.utilitarios.*;
+import  utilitarios.*;
 
 public class CelsiusParaFahrenheit
 {

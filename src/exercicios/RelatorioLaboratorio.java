@@ -9,9 +9,9 @@
 // Tempo médio por amostra (tempo total ÷ amostras).
 // Percentual de resultados válidos (válidos ÷ total).
 // Um resumo final bem formatado no console.
-package src.exercicios;
+package exercicios;
 import java.util.Scanner;
-import src.utilitarios.*;
+import  utilitarios.*;
 
 public class RelatorioLaboratorio 
 {

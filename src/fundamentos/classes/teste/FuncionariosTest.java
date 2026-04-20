@@ -1,7 +1,7 @@
-package src.fundamentos.classes.teste;
+package fundamentos.classes.teste;
 
-import src.fundamentos.classes.funcionarios.ImprimirFuncionarios;
-import src.fundamentos.classes.funcionarios.Funcionarios;
+import  fundamentos.classes.funcionarios.ImprimirFuncionarios;
+import  fundamentos.classes.funcionarios.Funcionarios;
 
 import java.util.Scanner;
 

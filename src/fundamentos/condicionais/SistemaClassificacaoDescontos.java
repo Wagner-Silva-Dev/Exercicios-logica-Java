@@ -4,10 +4,10 @@
 // Compras entre R$ 200,00 e R$ 499,99: Desconto de 10%.
 // Compras abaixo de R$ 200,00: Sem desconto (0%).
 
-package src.fundamentos.condicionais;
+package fundamentos.condicionais;
 
 import java.util.Scanner;
-import src.utilitarios.*;
+import  utilitarios.*;
 
 public class SistemaClassificacaoDescontos 
 {

@@ -1,4 +1,4 @@
-package src.fundamentos.classes.funcionarios;
+package fundamentos.classes.funcionarios;
 
 public class Funcionarios {
     public String []nomes = new String[3];

@@ -3,7 +3,7 @@
 // 2. Ignore tempos negativos diferentes de -1.
 // 3. Ao final, mostre soma, quantidade de válidos e média (se houver).
 // 4. Mostre uma mensagem clara se nenhum valor válido foi informado.
-package src.fundamentos.lacosrepeticao;
+package fundamentos.lacosrepeticao;
 
 import java.util.Scanner;
 import java.util.Locale;
