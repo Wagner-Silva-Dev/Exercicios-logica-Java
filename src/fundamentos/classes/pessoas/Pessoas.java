@@ -13,10 +13,9 @@ public class Pessoas {
         this.nome = nome;
     }
     public void setIdade(int idade){
-        if (idade <= 18){
-            System.out.println("Idade invalida");
+        if (idade < 18){
+            System.out.println("Menor de 18 anos");
             System.out.println("---------------");
-            return;
         }
         this.idade = idade;
     }
