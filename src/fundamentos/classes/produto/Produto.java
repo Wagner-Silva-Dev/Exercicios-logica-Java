@@ -25,16 +25,4 @@ public class Produto {
     public void setPreco(double preco) {
         this.preco = preco;
     }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public int getEstoque() {
-        return estoque;
-    }
-
-    public double getPreco() {
-        return preco;
-    }
 }
