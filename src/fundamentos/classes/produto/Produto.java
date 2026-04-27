@@ -10,7 +10,7 @@ public class Produto {
         System.out.println("Relatório do produto");
         System.out.println("Nome: " + this.nome);
         System.out.println("Estoque: " + this.estoque);
-        System.out.println("Preço: " + this.preco);
+        System.out.printf("Preço: %.2f\n", this.preco);
         System.out.println("-----------------------------");
     }
 
