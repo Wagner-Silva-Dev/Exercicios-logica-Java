@@ -9,32 +9,45 @@ public class ProdutosTest {
         Produto produto = new Produto();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite o nome do produto");
-        produto.setNome(scanner.nextLine());
+        validarNome(produto, scanner);
 
-        while (produto.getNome().isBlank() || produto.getNome().length() < 3) {
-            System.out.println("Nome invalido, digite novamente");
-            produto.setNome(scanner.nextLine());
-        }
+        validarEstoque(produto, scanner);
 
-        System.out.println("Digite a quantidade em estoque do produto");
-        produto.setEstoque(scanner.nextInt());
-
-        while (produto.getEstoque() < 0) {
-            System.out.println("Estoque invalido, digite novamente");
-            produto.setEstoque(scanner.nextInt());
-        }
-
-        System.out.println("Digite o valor do produto");
-        produto.setPreco(scanner.nextDouble());
-
-        while (produto.getPreco() < 0) {
-            System.out.println("Preco invalido, digite novamente");
-            produto.setPreco(scanner.nextDouble());
-        }
+        validarPreco(produto, scanner);
 
         produto.imprimirDados();
     }
 
+    static void validarNome(Produto produto, Scanner scanner) {
+        System.out.println("Digite o nome do produto");
+        String nome = scanner.nextLine();
 
+        while (nome.isBlank() || nome.length() < 3) {
+            System.out.println("Nome invalido, digite novamente");
+            nome = scanner.nextLine();
+        }
+        produto.setNome(nome);
+    }
+
+    static void validarEstoque(Produto produto, Scanner scanner) {
+        System.out.println("Digite a quantidade em estoque do produto");
+        int qtdeEstoque =  scanner.nextInt();
+
+        while (qtdeEstoque < 0) {
+            System.out.println("Quantidade invalido, digite novamente");
+            qtdeEstoque = scanner.nextInt();
+        }
+        produto.setEstoque(qtdeEstoque);
+    }
+
+    static void validarPreco(Produto produto, Scanner scanner) {
+        System.out.println("Digite o valor do produto");
+        double preco = scanner.nextDouble();
+
+        while (preco < 0) {
+            System.out.println("Preco invalido, digite novamente");
+            preco = scanner.nextDouble();
+        }
+        produto.setPreco(preco);
+    }
 }
