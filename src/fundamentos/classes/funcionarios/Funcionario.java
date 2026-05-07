@@ -4,11 +4,19 @@ public class Funcionario {
     private String nome;
     private int idade;
     private double salario;
+    private Departamento  departamento;
 
     public Funcionario(String nome, int idade, double salario) {
         this.nome = nome;
         this.idade = idade;
         this.salario = salario;
+    }
+
+    public Funcionario(String nome, int idade, double salario, Departamento departamento) {
+        this.nome = nome;
+        this.idade = idade;
+        this.salario = salario;
+        this.departamento = departamento;
     }
 
     public String getNome() {
@@ -21,5 +29,9 @@ public class Funcionario {
 
     public double getSalario() {
         return salario;
+    }
+
+    public Departamento getDepartamento() {
+        return departamento;
     }
 }
