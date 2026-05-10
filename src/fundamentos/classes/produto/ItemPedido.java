@@ -1,8 +1,8 @@
 package fundamentos.classes.produto;
 
 public class ItemPedido {
-    private String produto;
-    private int quantidade;
+    private final String produto;
+    private final int quantidade;
 
     public ItemPedido(String produto, int quantidade) {
         this.produto = produto;
