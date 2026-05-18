@@ -18,6 +18,14 @@ public class Aluno {
         this.nome = nome;
     }
 
+    public Seminario getSeminario() {
+        return seminario;
+    }
+
+    public void setSeminario(Seminario seminario) {
+        this.seminario = seminario;
+    }
+
     public int getIdade() {
         return idade;
     }
