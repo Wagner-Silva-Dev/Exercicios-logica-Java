@@ -1,24 +1,39 @@
 package fundamentos.classes.exercicios.seminario;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Seminario {
-    private Professor professor;
-    private List<Aluno> alunos = new ArrayList<>();
+    private Aluno[] alunos;
     private String titulo;
     private Local local;
 
-    public Seminario(Professor professor, Aluno aluno) {
-        this.professor = professor;
-        this.alunos.add(aluno);
-    }
     public Seminario(String titulo) {
         this.titulo = titulo;
     }
 
-    public void adicionarAluno(Aluno aluno){
-        this.alunos.add(aluno);
+    public Seminario(String titulo, Local local) {
+        this.titulo = titulo;
+        this.local = local;
+    }
+
+    public Seminario(String titulo, Aluno[] alunos, Local local) {
+        this.alunos = alunos;
+        this.titulo = titulo;
+        this.local = local;
+    }
+
+    public Aluno[] getAlunos() {
+        return alunos;
+    }
+
+    public void setAlunos(Aluno[] alunos) {
+        this.alunos = alunos;
+    }
+
+    public Local getLocal() {
+        return local;
+    }
+
+    public void setLocal(Local local) {
+        this.local = local;
     }
 
     public String getTitulo() {
@@ -28,5 +43,4 @@ public class Seminario {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-
 }
