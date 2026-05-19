@@ -1,7 +1,7 @@
 package fundamentos.classes.teste;
 
-import fundamentos.classes.produto.ItemPedido;
-import fundamentos.classes.produto.Pedido;
+import fundamentos.classes.exerciciosAssociacao.produto.ItemPedido;
+import fundamentos.classes.exerciciosAssociacao.produto.Pedido;
 
 import java.util.Scanner;
 

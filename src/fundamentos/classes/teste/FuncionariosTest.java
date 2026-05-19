@@ -1,7 +1,7 @@
 package fundamentos.classes.teste;
 
-import fundamentos.classes.funcionarios.Departamento;
-import fundamentos.classes.funcionarios.Funcionario;
+import fundamentos.classes.exerciciosAssociacao.funcionarios.Departamento;
+import fundamentos.classes.exerciciosAssociacao.funcionarios.Funcionario;
 
 import java.util.ArrayList;
 import java.util.Scanner;

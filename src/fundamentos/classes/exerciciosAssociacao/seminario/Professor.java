@@ -1,4 +1,4 @@
-package fundamentos.classes.exercicios.seminario;
+package fundamentos.classes.exerciciosAssociacao.seminario;
 
 public class Professor {
     private String nome;

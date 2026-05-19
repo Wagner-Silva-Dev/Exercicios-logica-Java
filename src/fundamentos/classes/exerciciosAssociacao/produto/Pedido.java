@@ -1,4 +1,4 @@
-package fundamentos.classes.produto;
+package fundamentos.classes.exerciciosAssociacao.produto;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package fundamentos.classes.produto;
+package fundamentos.classes.exerciciosAssociacao.produto;
 
 public class ItemPedido {
     private final String produto;
