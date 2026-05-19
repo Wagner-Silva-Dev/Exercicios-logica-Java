@@ -1,4 +1,4 @@
-package fundamentos.classes.exerciciosAssociacao.seminario;
+package fundamentos.classes.associacao.seminario;
 
 public class Seminario {
     private Aluno[] alunos;

@@ -1,4 +1,4 @@
-package exercicios;
+package fundamentos.condicionais;
 import java.util.Scanner;
 
 public class CalculadoraImc 

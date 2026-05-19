@@ -1,4 +1,4 @@
-package fundamentos.classes.exerciciosAssociacao.funcionarios;
+package fundamentos.classes.associacao.funcionarios;
 
 public class Departamento {
     private String nome;

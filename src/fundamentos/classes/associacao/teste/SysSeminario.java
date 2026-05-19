@@ -1,9 +1,9 @@
-package exercicios;
+package fundamentos.classes.associacao.teste;
 
-import fundamentos.classes.exerciciosAssociacao.seminario.Aluno;
-import fundamentos.classes.exerciciosAssociacao.seminario.Local;
-import fundamentos.classes.exerciciosAssociacao.seminario.Professor;
-import fundamentos.classes.exerciciosAssociacao.seminario.Seminario;
+import fundamentos.classes.associacao.seminario.Aluno;
+import fundamentos.classes.associacao.seminario.Local;
+import fundamentos.classes.associacao.seminario.Professor;
+import fundamentos.classes.associacao.seminario.Seminario;
 
 public class SysSeminario {
     public static void main(String[] args) {

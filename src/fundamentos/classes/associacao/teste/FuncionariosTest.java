@@ -1,7 +1,7 @@
-package fundamentos.classes.teste;
+package fundamentos.classes.associacao.teste;
 
-import fundamentos.classes.exerciciosAssociacao.funcionarios.Departamento;
-import fundamentos.classes.exerciciosAssociacao.funcionarios.Funcionario;
+import fundamentos.classes.associacao.funcionarios.Departamento;
+import fundamentos.classes.associacao.funcionarios.Funcionario;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -12,14 +12,14 @@ public class FuncionariosTest {
             ArrayList<Funcionario> funcionarios = new ArrayList<>(); //Lista que armazena os objetos Funcionario
 
             System.out.println("Quantos funcionários deseja cadastrar?");
-            int Funcionarios = scanner.nextInt();
+            int quantidadeFuncionarios = scanner.nextInt();
 
             System.out.println("Deseja cadastrar o departamento de quantos funcionarios?");
             int funcionariosDepartamento = scanner.nextInt();
             scanner.nextLine();
 
             int contador = 0;
-            for (int i = 0; i < Funcionarios; i++) {
+            for (int i = 0; i < quantidadeFuncionarios; i++) {
                 System.out.println("Digite o nome do funcionario : ");
                 String nome = scanner.nextLine();
 
@@ -52,13 +52,13 @@ public class FuncionariosTest {
                 System.out.println("----------------------------");
             }
 
-            if (Funcionarios > 1) {
+            if (quantidadeFuncionarios > 1) {
                 double soma = 0;
                 for (Funcionario funcionario : funcionarios) { //Percorre a lista para somar os salários
                     soma += funcionario.getSalario();
                 }
                 double media = soma / funcionarios.size();
-                System.out.printf("A média dos %s salarios é de %.2f", Funcionarios, media);
+                System.out.printf("A média dos %s salarios é de %.2f", quantidadeFuncionarios, media);
             }
         }
     }

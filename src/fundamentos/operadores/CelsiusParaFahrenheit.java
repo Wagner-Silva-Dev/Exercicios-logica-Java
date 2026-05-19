@@ -1,7 +1,7 @@
 // Enunciado
 // Crie um programa Java que leia uma temperatura em Celsius e mostre a temperatura em Fahrenheit.
 // Fórmula: F = C * 9/5 + 32.
-package exercicios;
+package fundamentos.operadores;
 
 import java.util.Scanner;
 import java.util.Locale;
