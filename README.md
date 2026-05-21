@@ -16,6 +16,7 @@ src/
 │   ├── classes/
 │   │   ├── associacao/   → associação entre classes (tem-um)
 │   │   ├── concessionaria/
+│   │   ├── herancas/     → herança e uso de super (é-um)
 │   │   ├── pessoas/
 │   │   └── sobrecarga/   → sobrecarga de métodos
 │   ├── condicionais/     → if/else e switch
